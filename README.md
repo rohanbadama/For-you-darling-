@@ -1,229 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Rose Day ❤️</title>
-<style>
-body {
-  margin:0;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg,#ffd6e8,#ffeef5);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  min-height:100vh;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Rose Day My Love</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
 
-.card{
-  width:92%;
-  max-width:390px;
-  background:#fff;
-  border-radius:22px;
-  padding:18px;
-  text-align:center;
-  box-shadow:0 15px 40px rgba(0,0,0,0.15);
-}
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffe4e1;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            color: #4a4a4a;
+        }
 
-.hidden{display:none;}
-h2,h3{color:#d6336c;}
-p{font-size:14px;color:#555;}
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
 
-.gif-box{
-  width:110px;
-  height:110px;
-  margin:0 auto 12px;
-  border-radius:16px;
-  overflow:hidden;
-}
-.gif-box img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
+        .card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            max-width: 400px;
+            width: 90%;
+            border: 2px solid #ffb6c1;
+            animation: fadeIn 0.8s ease-in-out;
+        }
 
-button{
-  background:#ff4d6d;
-  color:white;
-  border:none;
-  padding:10px 22px;
-  border-radius:25px;
-  font-size:14px;
-  margin-top:12px;
-  cursor:pointer;
-}
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-.roses{
-  display:flex;
-  justify-content:center;
-  gap:22px;
-  font-size:42px;
-  cursor:pointer;
-}
-.rose{
-  transition: transform 0.2s;
-}
-.rose:active{
-  transform:scale(1.3);
-}
-#roseMessage{
-  margin-top:14px;
-  min-height:44px;
-  font-size:15px;
-  color:#b0004e;
-  font-weight:500;
-}
+        h1 { font-family: 'Dancing Script', cursive; color: #d63384; font-size: 2.2rem; margin-bottom: 10px; }
+        h2 { font-size: 1.2rem; color: #ff69b4; margin-bottom: 20px; }
 
-.photo-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:10px;
-}
-.photo{
-  width:100%;
-  aspect-ratio:1/1;
-  border-radius:12px;
-  overflow:hidden;
-}
-.photo img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
+        .main-gif { width: 100%; border-radius: 15px; margin-bottom: 15px; }
 
-video{
-  width:100%;
-  border-radius:14px;
-  margin-bottom:12px;
-}
+        .btn {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            margin-top: 10px;
+        }
 
-.letter{
-  background:#fff7fb;
-  padding:14px;
-  border-radius:15px;
-  text-align:left;
-  font-size:13px;
-  color:#444;
-  max-height:320px;
-  overflow-y:auto;
-  white-space:pre-wrap;
-}
-</style>
+        .btn:hover { background: #d63384; transform: scale(1.05); }
+
+        /* Rose Pick Section */
+        .rose-container { display: flex; justify-content: space-around; margin: 20px 0; }
+        .rose { font-size: 40px; cursor: pointer; transition: 0.3s; }
+        .rose:hover { transform: scale(1.2); }
+
+        /* Memories Grid */
+        .memory-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .mem-img { width: 100%; height: 100px; object-fit: cover; border-radius: 10px; border: 2px solid #ffb6c1; }
+
+        /* Video Section */
+        video { width: 100%; border-radius: 15px; margin-bottom: 10px; border: 2px solid #ff69b4; }
+
+        /* Letter Section */
+        .letter-box {
+            text-align: left;
+            font-size: 0.9rem;
+            line-height: 1.6;
+            background: #fffafa;
+            padding: 15px;
+            border-radius: 10px;
+            height: 300px;
+            overflow-y: auto;
+            border-left: 5px solid #ff69b4;
+        }
+
+        .hidden { display: none; }
+        
+        /* Floating Hearts Background */
+        .heart {
+            position: fixed;
+            top: -10%;
+            font-size: 20px;
+            color: #ffb6c1;
+            z-index: -1;
+            animation: move 5s linear infinite;
+        }
+        @keyframes move {
+            to { transform: translateY(110vh) rotate(360deg); }
+        }
+    </style>
 </head>
 <body>
 
-<div class="card">
+<div class="container">
+    <div id="page1" class="card">
+        <h1>Happy Rose Day Baby 🌹</h1>
+        <img src="http://tmpfiles.org/dl/22876715/fromklickpincftkthao219bubududugif-tkthao219bubududupanda-discoversharegifs_cutecartoonquotescuteanimecatcutebeardrawings1.gif" class="main-gif">
+        <p>A rose for the person who makes my world more beautiful just by being in it ✨</p>
+        <button class="btn" onclick="nextPage('page2')">Open Memories</button>
+    </div>
 
-<!-- HOME -->
-<div id="home">
-  <div class="gif-box">
-    <img src="http://tmpfiles.org/dl/22876715/fromklickpincftkthao219bubududugif-tkthao219bubududupanda-discoversharegifs_cutecartoonquotescuteanimecatcutebeardrawings1.gif">
-  </div>
-  <h2>Happy Rose Day 🌹</h2>
-  <p>A rose for the one who makes my world beautiful</p>
-  <button onclick="openPage('game')">Pick a Rose</button>
-</div>
+    <div id="page2" class="card hidden">
+        <h1>Pick a Rose</h1>
+        <h2>One of these holds a secret message...</h2>
+        <img src="http://tmpfiles.org/dl/22876666/fromklickpincfpinvonelizavetapauesovaaufenrgy_gifbilderlustigniedlicheliebeszeichentrickliebegifthealeni.gif" class="main-gif">
+        <div class="rose-container">
+            <span class="rose" onclick="alert('This one is pretty, but try another!')">🌹</span>
+            <span class="rose" onclick="nextPage('page3')">🌹</span>
+            <span class="rose" onclick="alert('So close! Try the middle one!')">🌹</span>
+        </div>
+    </div>
 
-<!-- GAME -->
-<div id="game" class="hidden">
-  <div class="gif-box">
-    <img src="http://tmpfiles.org/dl/22876616/fromklickpincfpinbyceciliadelpantaongif_cutegifcutelovecartoonscutelovepictures.gif">
-  </div>
-  <h3>Pick a Rose 🌹</h3>
-  <p>Tap any rose below</p>
+    <div id="page3" class="card hidden">
+        <h1>Our Memories 🎀 🧿</h1>
+        <img src="http://tmpfiles.org/dl/22876616/fromklickpincfpinbyceciliadelpantaongif_cutegifcutelovecartoonscutelovepictures.gif" class="main-gif">
+        <div class="memory-grid">
+            <img src="https://i.postimg.cc/yNqkyd81/IMG_20260206_190532.png" class="mem-img">
+            <img src="https://i.postimg.cc/s2Fv4Xg3/IMG_20260206_190558.png" class="mem-img">
+            <img src="https://i.postimg.cc/K831TLx4/IMG_20260206_190630.png" class="mem-img">
+            <img src="https://i.postimg.cc/rp6KNmw8/IMG_20260206_190726.png" class="mem-img">
+            <img src="https://i.postimg.cc/XNxB64s3/IMG_20260206_190744.png" class="mem-img">
+            <img src="https://i.postimg.cc/MGkvmTpR/IMG_20260206_190444.png" class="mem-img">
+        </div>
+        <button class="btn" onclick="nextPage('page4')">See More</button>
+    </div>
 
-  <div class="roses">
-    <div class="rose" onclick="pickRose()">🌹</div>
-    <div class="rose" onclick="pickRose()">🌹</div>
-    <div class="rose" onclick="pickRose()">🌹</div>
-  </div>
+    <div id="page4" class="card hidden">
+        <h1>For You 🫶🏻💗</h1>
+        <video controls> <source src="https://files.catbox.moe/mw3f2q.mp4" type="video/mp4"> </video>
+        <video controls> <source src="https://files.catbox.moe/ggbrik.mp4" type="video/mp4"> </video>
+        <video controls> <source src="https://files.catbox.moe/sfk5b8.mp4" type="video/mp4"> </video>
+        <p style="font-size: 0.8rem;">Scroll down for more videos</p>
+        <button class="btn" onclick="nextPage('page5')">Final Surprise</button>
+    </div>
 
-  <div id="roseMessage"></div>
-
-  <button onclick="openPage('photos')">Our Memories 🎀🧿</button>
-</div>
-
-<!-- PHOTOS -->
-<div id="photos" class="hidden">
-  <h3>Our Memories 🎀🧿</h3>
-  <div class="photo-grid">
-    <div class="photo"><img src="https://i.postimg.cc/yNqkyd81/IMG_20260206_190532.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/s2Fv4Xg3/IMG_20260206_190558.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/K831TLx4/IMG_20260206_190630.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/rp6KNmw8/IMG_20260206_190726.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/XNxB64s3/IMG_20260206_190744.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/MGkvmTpR/IMG_20260206_190444.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/k5rBv4gN/IMG_20260206_190512.png"></div>
-    <div class="photo"><img src="https://i.postimg.cc/xdrc3C16/IMG_20260206_190418.png"></div>
-  </div>
-  <button onclick="openPage('videos')">For You 🫶🏻💗</button>
-</div>
-
-<!-- VIDEOS -->
-<div id="videos" class="hidden">
-  <h3>For You 🫶🏻💗</h3>
-  <video controls playsinline src="https://files.catbox.moe/mw3f2q.mp4"></video>
-  <video controls playsinline src="https://files.catbox.moe/ggbrik.mp4"></video>
-  <video controls playsinline src="https://files.catbox.moe/sfk5b8.mp4"></video>
-  <video controls playsinline src="https://files.catbox.moe/p150ss.mp4"></video>
-  <video controls playsinline src="https://files.catbox.moe/3ju0zb.mp4"></video>
-  <video controls playsinline src="https://files.catbox.moe/6kf2dd.mp4"></video>
-  <button onclick="openPage('letter')">From My Heart 🤍</button>
-</div>
-
-<!-- LETTER -->
-<div id="letter" class="hidden">
-  <div class="gif-box">
-    <img src="http://tmpfiles.org/dl/22876413/fromklickpincfbunnysticker-bunny-discoversharegifs_cutelovegifcutegifloveyougif.gif">
-  </div>
-  <h3>From My Heart 🤍</h3>
-  <div class="letter">
-Happy Rose Day, meri zindagi ke sabse khoobsurat ehsaas 🌹
-Aaj Rose Day hai, aur jab bhi rose ka naam aata hai na, mujhe aap yaad aa jaate ho. Kyunki jaise ek rose simple hoke bhi special hota hai, waise hi aap meri life me aaye bina koi shor machaye… par dheere dheere sabse important ban gaye. Aapke saath hone ka ehsaas hi alag hai — bina zyada bole, bina zyada dikhaye, bas ek sukoon sa. Jaise kisi thake hue din ke baad achanak thandi hawa mil jaaye.
-Mujhe aapki woh chhoti chhoti baatein bohot pasand hain, jinhe shayad duniya notice bhi na kare, par mere liye wahi sabse important hoti hain. Aapka mood, aapki khamoshi, aapki hasi, aur kabhi kabhi aapka bina wajah gussa hona — sab kuch. Aap perfect isliye nahi ho kyunki aap kabhi galat nahi hote, balki isliye ho kyunki aap real ho. Aur mujhe real cheezein hi sabse zyada apni lagti hain.
-Rose ki tarah hi pyaar bhi hota hai — thoda soft, thoda strong, kabhi khushboo se bhara, kabhi thoda sa dard bhi deta hai. Par phir bhi koi rose ko chhodta nahi, kyunki uski khoobsurti uske saath aane wale har ehsaas ke layak hoti hai. Bilkul waise hi, aap bhi. Aapke saath har moment easy nahi hota, par har moment worth it hota hai.
-Aapko shayad andaza bhi nahi hai ki aapki presence mere liye kya maayne rakhti hai. Jab aap theek hote ho, mujhe lagta hai sab theek hai. Aur jab aap thode low feel karte ho, to dil karta hai bas itna kar paun ki aapko thoda sa halka feel kara saku. Kyunki pyaar ka matlab sirf saath rehna nahi hota, balki ek dusre ki care bina shart ke karna hota hai.
-Aaj Rose Day pe main koi wada nahi kar raha, koi badi baat nahi keh raha. Bas itna kehna chahta hoon ki aap meri life ka woh rose ho jo main sambhaal ke rakhna chahta hoon — bina todhe, bina force kiye, bas respect aur care ke saath. Aap jaisa ho, jaise bhi ho, wahi mere liye kaafi hai.
-Is Rose Day pe agar main aapko ek rose deta, to uske saath sirf ek hi baat likhta —
-“Aap meri life me ho, wahi mere liye sabse badi khushi hai.” 🌹
-Happy Rose Day 🤍
-Hamesha muskurate rahiye… kyunki aapki muskurahat kisi ke liye bohot special hai.
-  </div>
-  <button onclick="openPage('thanks')">Next</button>
-</div>
-
-<!-- THANK YOU / CLOSING -->
-<div id="thanks" class="hidden">
-  <h3>Thank You 🤍</h3>
-  <p>Hope you liked it! Wishing you lots of happiness and smiles 🌸</p>
-  <div class="gif-box">
-    <img src="http://tmpfiles.org/dl/22876666/fromklickpincfpinvonelizavetapauesovaaufenrgy_gifbilderlustigniedlicheliebeszeichentrickliebegifthealeni.gif">
-  </div>
-  <button onclick="openPage('home')">Back to Start</button>
-</div>
-
+    <div id="page5" class="card hidden">
+        <h1>From My Heart 💖</h1>
+        <img src="http://tmpfiles.org/dl/22876413/fromklickpincfbunnysticker-bunny-discoversharegifs_cutelovegifcutegifloveyougif.gif" class="main-gif">
+        <div class="letter-box">
+            <strong>My Dearest,</strong><br><br>
+            Happy Rose Day, meri zindagi ke sabse khoobsurat ehsaas 🌹<br>
+            Aaj Rose Day hai, aur jab bhi rose ka naam aata hai na, mujhe aap yaad aa jaate ho...<br><br>
+            Aap meri life me aaye bina koi shor machaye… par dheere dheere sabse important ban gaye. Aapke saath hone ka ehsaas hi alag hai — bina zyada bole, bina zyada dikhaye, bas ek sukoon sa. Jaise kisi thake hue din ke baad achanak thandi hawa mil jaaye.<br><br>
+            Mujhe aapki woh chhoti chhoti baatein bohot pasand hain... Aapka mood, aapki khamoshi, aapki hasi, aur kabhi kabhi aapka bina wajah gussa hona — sab kuch. Aap perfect isliye nahi ho kyunki aap kabhi galat nahi hote, balki isliye ho kyunki aap real ho.<br><br>
+            Rose ki tarah hi pyaar bhi hota hai — thoda soft, thoda strong. Aapke saath har moment easy nahi hota, par har moment worth it hota hai.<br><br>
+            Aaj Rose Day pe main koi wada nahi kar raha, bas itna kehna chahta hoon ki aap meri life ka woh rose ho jo main sambhaal ke rakhna chahta hoon. Aap jaisa ho, jaise bhi ho, wahi mere liye kaafi hai.<br><br>
+            “Aap meri life me ho, wahi mere liye sabse badi khushi hai.” 🌹<br><br>
+            <strong>Always Yours 🤍</strong>
+        </div>
+        <button class="btn" onclick="location.reload()">Back to Start</button>
+    </div>
 </div>
 
 <script>
-function openPage(id){
-  document.querySelectorAll('.card > div').forEach(d=>d.classList.add('hidden'));
-  document.getElementById(id).classList.remove('hidden');
-}
+    function nextPage(id) {
+        document.querySelectorAll('.card').forEach(card => card.classList.add('hidden'));
+        document.getElementById(id).classList.remove('hidden');
+        window.scrollTo(0,0);
+    }
 
-const roseMessages=[
-  "You are my favourite feeling ❤️",
-  "Life feels softer with you 🌸",
-  "I choose you, every single day 🫶🏻",
-  "You make ordinary moments special 🤍",
-  "My heart feels safe with you 🌹"
-];
-
-function pickRose(){
-  const msg = roseMessages[Math.floor(Math.random()*roseMessages.length)];
-  document.getElementById("roseMessage").innerText = msg;
-}
+    // Floating Hearts Logic
+    function createHeart() {
+        const heart = document.createElement('div');
+        heart.classList.add('heart');
+        heart.innerHTML = '❤️';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+        document.body.appendChild(heart);
+        setTimeout(() => { heart.remove(); }, 5000);
+    }
+    setInterval(createHeart, 400);
 </script>
 
 </body>
