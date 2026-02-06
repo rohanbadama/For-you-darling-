@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Rose Day Special 🌹</title>
+    <title>Happy Rose Day jaaaaaneman 😚🌹</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -14,18 +14,19 @@
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
         .card { background: white; border-radius: 20px; padding: 20px; box-shadow: 0 10px 25px rgba(255, 182, 193, 0.4); border: 2px solid #ffb6c1; margin-top: 10px; }
         h1 { font-family: 'Dancing Script', cursive; color: #d63384; font-size: 2.2rem; margin-bottom: 10px; }
-        .media-img { width: 100%; border-radius: 15px; margin-bottom: 15px; }
+        .media-img { width: 100%; border-radius: 15px; margin-bottom: 15px; object-fit: cover; }
         .btn { background: #ff69b4; color: white; border: none; padding: 16px; border-radius: 50px; font-size: 1.1rem; font-weight: bold; width: 100%; margin-top: 15px; cursor: pointer; }
         .photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
         .photo-grid img { width: 100%; height: 150px; object-fit: cover; border-radius: 10px; border: 3px solid #fff; }
-        .video-box { width: 100%; border-radius: 15px; background: #000; overflow: hidden; border: 2px solid #ffb6c1; }
+        .video-box { width: 100%; border-radius: 15px; background: #000; overflow: hidden; border: 2px solid #ffb6c1; position: relative; }
         video { width: 100%; display: block; max-height: 70vh; }
         .letter-content { text-align: left; font-size: 0.95rem; line-height: 1.7; padding: 15px; background: #fffafb; border-radius: 15px; max-height: 400px; overflow-y: auto; white-space: pre-line; border-left: 5px solid #ff69b4; }
-        .thanks-note { font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #d63384; padding: 20px; }
+        .thanks-note { font-family: 'Dancing Script', cursive; font-size: 1.8rem; color: #d63384; padding: 20px; line-height: 1.4; }
     </style>
 </head>
 <body>
 <div class="mobile-container">
+
     <div id="p1" class="screen active">
         <div class="card">
             <h1>Happy Rose Day Baby 🌹</h1>
@@ -41,11 +42,13 @@
             <div style="font-size: 50px; display: flex; justify-content: space-around; padding: 20px;">
                 <span onclick="show('p3')">🌹</span><span onclick="show('p3')">🌹</span><span onclick="show('p3')">🌹</span>
             </div>
+            <p>Sahi wala rose chuno...</p>
         </div>
     </div>
 
     <div id="p3" class="screen">
         <h1>Our Memories 🧿</h1>
+        <img src="https://lh3.googleusercontent.com/d/1zm_5MtzSdPwIItyl39vvteBJcjAU1oUV" class="media-img" style="max-height: 120px; object-fit: contain;">
         <div class="photo-grid">
             <img src="https://lh3.googleusercontent.com/d/1B4Bj9d15ClW3IoIHJDNuTVes3I8arDg-">
             <img src="https://lh3.googleusercontent.com/d/1MZBfHzLtyw7UORTQTxVQM2ZGCHzJ_Imt">
@@ -54,7 +57,7 @@
             <img src="https://lh3.googleusercontent.com/d/1aFSL8ukbhy2tohjoAf03eotzja4J4Kik">
             <img src="https://lh3.googleusercontent.com/d/1YPtSs7ckY65qpKCOctQEKqTKmzFepByc">
             <img src="https://lh3.googleusercontent.com/d/17G2nGQuqMN9L78QCH39GcsfXHP-XY8SW">
-            <img src="https://lh3.googleusercontent.com/d/1IfJckumLmzfKTpTVfDHV_SO10V_SO10">
+            <img src="https://lh3.googleusercontent.com/d/1IfJckumLmzfKTpTVfDHV_SO10L6tFMyL">
         </div>
         <button class="btn" onclick="show('v1')">Videos Dekho 🫶🏻</button>
     </div>
@@ -69,16 +72,17 @@
     <div id="p5" class="screen">
         <div class="card">
             <h1>From My Heart 💖</h1>
+            <img src="https://lh3.googleusercontent.com/d/1dXkHhPJa_HTStp0XiXsYivngmY_ufFry" class="media-img" style="max-height: 100px; object-fit: contain;">
             <div class="letter-content">
                 Happy Rose Day, meri zindagi ke sabse khoobsurat ehsaas 🌹
-                Aaj Rose Day hai, aur jab bhi rose ka naam aata hai na, mujhe aap yaad aa jaate ho. Kyunki jaise ek rose simple hoke bhi special hota hai, waise hi aap meri life me aaye bina koi shor machaye… par dheere dheere sabse important ban gaye. Aapke saath hone ka ehsaas hi alag hai — bina zyada bole, bina zyada dikhaye, bas ek sukoon sa. Jaise kisi thake hue din ke baad achanak thandi hawa mil jaaye.
-                Mujhe aapki woh chhoti chhoti baatein bohot pasand hain, jinhe shayad duniya notice bhi na kare, par mere liye wahi sabse important hoti hain. Aapka mood, aapki khamoshi, aapki hasi, aur kabhi kabhi aapka bina wajah gussa hona — sab kuch. Aap perfect isliye nahi ho kyunki aap kabhi galat nahi hote, balki isliye ho kyunki aap real ho. Aur mujhe real cheezein hi sabse zyada apni lagti hain.
-                Rose ki tarah hi pyaar bhi hota hai — thoda soft, thoda strong, kabhi khushboo se bhara, kabhi thoda sa dard bhi deta hai. Par phir bhi koi rose ko chhodta nahi, kyunki uski khoobsurti uske saath aane wale har ehsaas ke layak hoti hai. Bilkul waise hi, aap bhi. Aapke saath har moment easy nahi hota, par har moment worth it hota hai.
-                Aapko shayad andaza bhi nahi hai ki aapki presence mere liye kya maayne rakhti hai. Jab aap theek hote ho, mujhe lagta hai sab theek hai. Aur jab aap thode low feel karte ho, to dil karta hai bas itna kar paun ki aapko thoda sa halka feel kara saku. Kyunki pyaar ka matlab sirf saath rehna nahi hota, balki ek dusre ki care bina shart ke karna hota hai.
-                Aaj Rose Day pe main koi wada nahi kar raha, koi badi baat nahi keh raha. Bas itna kehna chahta hoon ki aap meri life ka woh rose ho jo main sambhaal ke rakhna chahta hoon — bina todhe, bina force kiye, bas respect aur care ke saath. Aap jaisa ho, jaise bhi ho, wahi mere liye kaafi hai.
-                Is Rose Day pe agar main aapko ek rose deta, to uske saath sirf ek hi baat likhta —
-                “Aap meri life me ho, wahi mere liye sabse badi khushi hai.” 🌹
+                Aaj Rose Day hai, aur jab bhi rose ka naam aata hai na, mujhe aap yaad aa jaate ho. Kyunki jaise ek rose simple hoke bhi special hota hai, waise hi aap meri life me aaye bina koi shor machaye… par dheere dheere sabse important ban gaye. Aapke saath hone ka ehsaas hi alag hai — bina zyada bole, bina zyada dikhaye, bas ek sukoon sa. 
+                
+                Mujhe aapki woh chhoti chhoti baatein bohot pasand hain, jinhe shayad duniya notice bhi na kare, par mere liye wahi sabse important hoti hain. Rose ki tarah hi pyaar bhi hota hai — thoda soft, thoda strong. Aapke saath har moment easy nahi hota, par har moment worth it hota hai. 
+                
+                Is Rose Day pe agar main aapko ek rose deta, to uske saath sirf ek hi baat likhta — “Aap meri life me ho, wahi mere liye sabse badi khushi hai.” 🌹
+
                 Happy Rose Day 🤍
+                Hamesha muskurate rahiye…
             </div>
             <button class="btn" onclick="show('p6')">Ek Last Cheez... 🥺</button>
         </div>
@@ -97,14 +101,22 @@
 
 <script>
     function show(id) {
-        // Stop all videos immediately
+        // Stop and reset ALL videos
         document.querySelectorAll('video').forEach(v => {
             v.pause();
             v.currentTime = 0;
         });
-        // Switch Page
+        
+        // Hide all screens and show target
         document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
         document.getElementById(id).classList.add('active');
+        
+        // Auto-play the video on the new page
+        const activeVideo = document.querySelector('#' + id + ' video');
+        if (activeVideo) {
+            activeVideo.play().catch(e => console.log("Auto-play blocked, waiting for user tap."));
+        }
+        
         window.scrollTo(0,0);
     }
 </script>
